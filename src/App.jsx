@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import './styles/App.css';
@@ -22,14 +22,14 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const [imageSrc, setImageSrc] = useState('/img/compressed_tre.jpeg');
+  const [imageSrc, setImageSrc] = useState('/arbryllup/img/compressed_tre.jpeg');
 
   useEffect(() => {
     const updateImage = () => {
       if (window.innerWidth <= 768) {
-        setImageSrc('/img/compressed_en.jpeg');
+        setImageSrc('/arbryllup/img/compressed_en.jpeg');
       } else {
-        setImageSrc('/img/compressed_tre.jpeg');
+        setImageSrc('/arbryllup/img/compressed_tre.jpeg');
       }
     };
 
@@ -43,31 +43,31 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className="app-container">
-        <Navbar />
-        <div className='main-container'>
-          
-          <section className="left-sec">
-            <img src={imageSrc} alt="couple" className="weddingImg" />
-            <div className="left-text">
-              <h1>Aslak & Ragnhild</h1>
-              <p>Me gifte oss!</p>
-            </div>
-          </section>
+    <BrowserRouter basename='/arbryllup'>
+        <div className="app-container">
+          <Navbar />
+          <div className='main-container'>
+            
+            <section className="left-sec">
+              <img src={imageSrc} alt="couple" className="weddingImg" />
+              <div className="left-text">
+                <h1>Aslak & Ragnhild</h1>
+                <p>Me gifte oss!</p>
+              </div>
+            </section>
 
-          <section className='right-sec'>
-            <Routes>
-              <Route path="/" element={<HomePage isLargeScreen={isLargeScreen} />} />
-              <Route path="/schedule" element={<SchedulePage isLargeScreen={isLargeScreen} />} />
-              <Route path="/placestay" element={<PlaceStayPage isLargeScreen={isLargeScreen} />} />
+            <section className='right-sec'>
+              <Routes>
+                <Route path="/" element={<HomePage isLargeScreen={isLargeScreen} />} />
+                <Route path="/program" element={<SchedulePage isLargeScreen={isLargeScreen} />} />
+                <Route path="/opphold" element={<PlaceStayPage isLargeScreen={isLargeScreen} />} />
 
-            </Routes>
-          </section>
+              </Routes>
+            </section>
+          </div>
         </div>
-      </div>
-      
-    </Router>
+    </BrowserRouter>
+    
   )
 }
 
