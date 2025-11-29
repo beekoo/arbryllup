@@ -1,0 +1,127 @@
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Hamburger button */
+  .hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Dropdown links */
+  .nav-links {
+    list-style: none;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 2.5rem;   /* appears just below hamburger */
+    right: 0;      /* align to the right instead of left */
+    background-color: rgba(254, 252, 245, 0.8);
+    border-radius: 4px;
+    display: none;
+    flex-direction: column;
+    text-align: left;  /* align text to right */
+    margin: 0;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links.open {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+  
+  .nav-links a {
+    flex: 1; /* Each link gets equal width */
+    text-align: center;
+    text-decoration: none;
+    color: #5a452c;
+    font-weight: 500;
+    
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    background-color: rgba(255, 239, 213, 0.8);
+  }
+}
+
+
+
+/* Desktop */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  
+  .header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 21;
+    background-color:#fefcf5;
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-evenly; /* Evenly space links across full width */
+    align-items: center;
+    width: 100%; /* Fill full width of navbar */
+    gap: 0; /* Remove manual gaps; even spacing handles it */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .nav-links a {
+    flex: 1; /* Each link gets equal width */
+    text-align: center;
+    text-decoration: none;
+    color: #5a452c;
+    font-weight: 500;
+    padding: 1rem 0;
+    border-bottom: 1px solid;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(255, 239, 213, 0.8);
+    
+  }
+
+  .nav-links li {
+    flex: 1;
+  }
+  .nav-links a {
+    display: block;
+  }
+  
+
+}
