@@ -18,8 +18,8 @@ function Navbar() {
         </div>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><Link to="/">Velkommen</Link></li>
-          <li><Link to="/schedule">Program</Link></li>
-          <li><Link to="/placestay">Sted & Opphold</Link></li>
+          <li><Link to="/program">Program</Link></li>
+          <li><Link to="/opphold">Sted & Opphold</Link></li>
           <li><a href="https://www.onskelister.no/app/liste?id=V6NGFFTbf9gkidNAiPIy">Ønske Liste</a></li>
           <li>
             <a
