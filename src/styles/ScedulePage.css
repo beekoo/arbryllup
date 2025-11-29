@@ -1,0 +1,48 @@
+/* Ensure the schedule page takes up the full viewport height */
+.schedule-page {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push buttons to the bottom */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    padding: 2rem;
+    background-color: #fefcf5; /* Match the rest of the design */
+  }
+  
+  /* Style the schedule content */
+  .schedule-content {
+    text-align: center;
+    max-width: 600px;
+    flex: 1; /* Allow the content to grow and take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+  }
+  
+  /* Style the navigation buttons */
+  .schedule-navigation {
+    display: flex;
+    gap: 1rem; /* Add spacing between buttons */
+    margin-top: 2rem;
+  }
+  
+  .schedule-navigation button {
+    padding: 0.5rem 1rem;
+    border: 2px solid #d4a373;
+    background-color: #fefcf5;
+    color: #5a452c;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .schedule-navigation button.active {
+    background-color: #d4a373;
+    color: #fff;
+  }
+  
+  .schedule-navigation button:hover {
+    background-color: #d4a373;
+    color: #fff;
+  }
