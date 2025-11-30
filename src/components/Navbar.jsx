@@ -1,39 +1,70 @@
 import '../styles/Navbar.css';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation(); // Hook to detect route changes
+
+  // Close the menu when clicking anywhere outside or after navigating to a new page
+  useEffect(() => {
+    // Close the menu after a route change
+    setMenuOpen(false);
+  }, [location]);
+
+  useEffect(() => {
+    // Function to close the menu when clicking outside
+    const handleClickOutside = () => {
+      setMenuOpen(false);
+    };
+
+    // Add event listener to the document
+    document.addEventListener('click', handleClickOutside);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  // Prevent clicks inside the menu from closing it
+  const handleMenuClick = (e) => {
+    e.stopPropagation();
+  };
 
   return (
     <header className="header">
       <nav className="navbar">
         <div
           className="hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={(e) => {
+            e.stopPropagation(); // Prevent closing when clicking the hamburger
+            setMenuOpen(!menuOpen);
+          }}
           aria-label="Toggle navigation menu"
         >
           ☰
         </div>
-        <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <li><Link to="/">Velkommen</Link></li>
-          <li><Link to="/program">Program</Link></li>
-          <li><Link to="/opphold">Sted & Opphold</Link></li>
-          <li><a href="https://www.onskelister.no/app/liste?id=V6NGFFTbf9gkidNAiPIy">Ønske Liste</a></li>
+        <ul
+          className={`nav-links ${menuOpen ? 'open' : ''}`}
+          onClick={handleMenuClick} // Prevent closing when clicking inside the menu
+        >
+          <li><Link to="/" onClick={() => setMenuOpen(false)}>Velkommen</Link></li>
+          <li><Link to="/program" onClick={() => setMenuOpen(false)}>Program</Link></li>
+          <li><Link to="/opphold" onClick={() => setMenuOpen(false)}>Sted & Opphold</Link></li>
           <li>
             <a
-              href="https://forms.gle/exampleGoogleFormLink"
+              href="https://www.onskelister.no/app/liste?id=V6NGFFTbf9gkidNAiPIy"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
             >
-              RSVP
+              Ønske Liste
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    
   );
 }
 
