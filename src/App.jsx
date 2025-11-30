@@ -61,7 +61,6 @@ function App() {
                 <Route path="/" element={<HomePage isLargeScreen={isLargeScreen} />} />
                 <Route path="/program" element={<SchedulePage isLargeScreen={isLargeScreen} />} />
                 <Route path="/opphold" element={<PlaceStayPage isLargeScreen={isLargeScreen} />} />
-
               </Routes>
             </section>
           </div>

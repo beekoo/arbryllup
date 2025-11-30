@@ -52,6 +52,9 @@ const [timeLeft, setTimeLeft] = useState('');
           >
             TRYKK HER FOR Å STADFESTE AT DU KJEM
           </a>
+          <footer className="small-footer">
+            <p>Aslak og Ragnhild 2026</p>
+          </footer>
         </div>
     </section>
   )

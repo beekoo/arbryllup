@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-import '../styles/PlaceStayPage.css';
+// import '../styles/PlaceStayPage.css';
+// import '../styles/App.css'
 
 
 
@@ -20,7 +21,7 @@ function PlaceStayPage({ isLargeScreen }) {
           Hatlestrand kyrkje – vielse i Ragnhild si heimbygd.<br/>
           Ca. 45 min køyring sør for Hardingasete. 
         </p>
-        <img className='stayPhoto' src="/img/hardanger.JPG" alt="" />
+        <img className='stayPhoto' src="/arbryllup/img/hardanger.JPG" alt="" />
       </>
     ),
     Stay: (
@@ -45,7 +46,7 @@ function PlaceStayPage({ isLargeScreen }) {
   };
 
   return (
-    <div className="place-page">
+    <div className="right-sec">
       {isLargeScreen} {/* Render Navbar for large screens */}
       <div className="place-navigation">
         <button
@@ -61,10 +62,13 @@ function PlaceStayPage({ isLargeScreen }) {
           Overnatting
         </button>
       </div>
-      <div className="place-content">
+      <div className="right-content">
         {sections[selectedSection]} {/* Render the selected section */}
         
       </div>
+      <footer className="small-footer">
+        <p>Aslak og Ragnhild 2026</p>
+      </footer>
     </div>
   );
 }

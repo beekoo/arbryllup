@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { useState } from 'react';
-import '../styles/ScedulePage.css';
+// import '../styles/ScedulePage.css';
 
 
 function SchedulePage({ isLargeScreen }) {
@@ -39,7 +39,7 @@ function SchedulePage({ isLargeScreen }) {
   };
 
   return (
-    <div className="schedule-page">
+    <div className="right-sec">
       {isLargeScreen} 
       <div className="schedule-navigation">
         <button onClick={() => setSelectedDay('Friday')} className={selectedDay === 'Friday' ? 'active' : ''}>
@@ -52,10 +52,14 @@ function SchedulePage({ isLargeScreen }) {
           Søndag
         </button>
       </div>
-      <div className="schedule-content">
+      <div className="right-content">
         {schedule[selectedDay]} {/* Render the schedule for the selected day */}
       </div>
+      <footer className="small-footer">
+        <p>Aslak og Ragnhild 2026</p>
+      </footer>
     </div>
+    
   );
 }
 
