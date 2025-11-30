@@ -51,7 +51,7 @@ html, body {
 .right-sec {
   background-color: #fefcf5;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   color: #5a452c;
   display: flex;
   flex-direction: column;
@@ -61,6 +61,7 @@ html, body {
   overflow-y: auto;
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none;
+ 
 }
 
 .right-sec::-webkit-scrollbar {
@@ -86,6 +87,84 @@ html, body {
   color: white;
 }
 
+/*PLACE CSS*/
+.place-navigation {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.place-navigation button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #d4a373;
+  background-color: #fefcf5;
+  color: #5a452c;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.place-navigation button.active {
+  background-color: #d4a373;
+  color: #fff;
+}
+
+.place-navigation button:hover {
+  background-color: #d4a373;
+  color: #fff;
+}
+
+.stayPhoto{
+max-width: 60%;
+/* max-height: 40%; */
+height: auto;
+display: block;
+/* margin-top: 2%;
+margin-bottom: 5%; */
+margin: 8% auto 12% auto;
+}
+
+/*SCEDULE PAGE*/
+.schedule-navigation {
+  display: flex;
+  gap: 0.2rem; 
+  margin-top: 2rem;
+}
+
+.schedule-navigation button {
+  /* padding: 0.5rem 1rem; */
+  border: 2px solid #d4a373;
+  background-color: #fefcf5;
+  color: #5a452c;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.schedule-navigation button.active {
+  background-color: #d4a373;
+  color: #fff;
+}
+
+.schedule-navigation button:hover {
+  background-color: #d4a373;
+  color: #fff;
+}
+
+/* Style the footer */
+.small-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #5a452c;
+  background-color: #fefcf5;
+  /* padding: 0.5rem; */
+  border-top: 1px solid #d4a373;
+  width: 100%;
+  margin-top: 20px;
+}
+
 /* Responsive Design for Larger Screens */
 @media (min-width: 768px) {
 
@@ -106,7 +185,12 @@ html, body {
   .right-sec {
     width: 50%;
     height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
   }
+
+  
 
   .weddingImg {
     height: 100%;
@@ -122,6 +206,21 @@ html, body {
 
   .left-text p {
     font-size: 2rem;
+  }
+
+  /* .schedule-navigation {
+    gap: 2rem; 
+  } */
+  
+  /* .schedule-navigation button {
+    padding: 0.5rem 1rem;
+  } */
+
+  .small-footer {
+    font-size: 1rem;
+    width: 100%; 
+    border-top: 2px solid #d4a373; 
+    margin-top: 20px;
   }
 
   
