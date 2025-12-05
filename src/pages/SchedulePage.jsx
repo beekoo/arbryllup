@@ -13,12 +13,12 @@ function SchedulePage({ isLargeScreen }) {
       <>
         <h2>Fredag 1. Mai - Velkomen</h2>
         <p>Frå morgonen: Topptur for dei ivrigaste (nærmare info kjem for dei interesserte)</p>
-        <p>Ettermiddag: Velkomen til <a href="https://maps.app.goo.gl/7LNqqnpECT51Sc8HA ">Hardingasete</a> og innsjekk</p>
+        <p>Ettermiddag: Velkomen til <a href="https://maps.app.goo.gl/7LNqqnpECT51Sc8HA ">Hardingasete</a> og innsjekk, stamp og badstue etter tur før middag</p>
        
           <p>Velkomst og bli kjend kveld:</p>  
-          <p>Middag, quiz, mingling, stamp og badstue. Baren stenger kl. 00.00</p>
+          <p>Middag, quiz, mingling. Baren stenger kl. 00.00</p>
             
-        
+        <p>Dresscode: Smart casual</p>
         
       </>
     ),
@@ -28,6 +28,11 @@ function SchedulePage({ isLargeScreen }) {
         <p>Morgon: Frokost, Sted: Hardingasete</p>
         <p>13.00 – vigsel i <a href="https://maps.app.goo.gl/1J4BAikCo11v41rQ7">Hatlestrand kyrkje</a> (Ragnhild sin heimplass)</p>
         <p>Ettermiddag/kveld/natt på Hardingasete: Mottaking, middag og fest</p>
+
+        <p>Dresscode herrer: Smoking/mørk dress, bunad.</p>
+        <p>Dresscode damer: kjole/bunad.</p>
+
+        <p>Kveldens toastmaster er Vemund Ravnsborg Gurigard. Ta kontakt på 977 28 118 for å koordinera talar eller underhalding</p>
       </>
     ),
     Sunday: (

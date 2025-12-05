@@ -59,7 +59,7 @@ function Navbar() {
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
             >
-              Ønskeliste
+              Ynskjeliste
             </a>
           </li>
         </ul>

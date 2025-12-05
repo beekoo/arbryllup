@@ -21,7 +21,7 @@ function PlaceStayPage({ isLargeScreen }) {
           Hatlestrand kyrkje – vielse i Ragnhild si heimbygd.<br/>
           Ca. 45 min køyring sør for Hardingasete. 
         </p>
-        <img className='stayPhoto' src="/arbryllup/img/hardanger.JPG" alt="" />
+        <img className='stayPhoto' src="/img/hardanger.JPG" alt="" />
       </>
     ),
     Stay: (

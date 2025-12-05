@@ -22,14 +22,14 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const [imageSrc, setImageSrc] = useState('/arbryllup/img/compressed_tre.jpeg');
+  const [imageSrc, setImageSrc] = useState('/img/compressed_tre.jpeg');
 
   useEffect(() => {
     const updateImage = () => {
       if (window.innerWidth <= 768) {
-        setImageSrc('/arbryllup/img/compressed_en.jpeg');
+        setImageSrc('/img/compressed_en.jpeg');
       } else {
-        setImageSrc('/arbryllup/img/compressed_tre.jpeg');
+        setImageSrc('/img/compressed_tre.jpeg');
       }
     };
 
