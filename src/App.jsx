@@ -43,7 +43,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename='/arbryllup'>
+    <BrowserRouter>
         <div className="app-container">
           <Navbar />
           <div className='main-container'>
