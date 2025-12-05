@@ -40,6 +40,7 @@ html, body {
   font-size: 2rem;
   margin: 0;
   font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
 }
 
 .left-text p {
@@ -198,6 +199,7 @@ margin: 8% auto 12% auto;
 
   .left-text h1 {
     font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .right-sec p{
