@@ -54,7 +54,7 @@ function Navbar() {
           <li><Link to="/opphold" onClick={() => setMenuOpen(false)}>Sted & Opphold</Link></li>
           <li>
             <a
-              href="https://www.onskelister.no/app/liste?id=V6NGFFTbf9gkidNAiPIy"
+              href="https://onsk.no/lister/qm8-p7n"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
