@@ -32,8 +32,7 @@ function PlaceStayPage({ isLargeScreen }) {
           Hardingasete er i realiteten eit hotell, sjølv om det framstår som eit tun med mange hus og fin atmosfære.<br/>  
         </p>
         <p>  
-          Prisen for to overnattingar med frukost er kr 2000. Oppgjer for overnatting og frukost gjerast via oss. <br/> 
-          Nærmare informasjon om dette kjem seinare.
+          Prisen for to overnattingar med frukost er kr 2000. Oppgjer for overnatting og frukost gjerast via oss og kan vippsast til Aslak. <br></br> Telefonnummer: 414 75 029
         </p>
         {/* <img className='stayPhoto' src="/img/hardingasete.jpg" alt="" />
         <img className='stayPhoto' src="/img/hardingasete2.jpg" alt="" />

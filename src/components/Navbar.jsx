@@ -49,9 +49,9 @@ function Navbar() {
           className={`nav-links ${menuOpen ? 'open' : ''}`}
           onClick={handleMenuClick} // Prevent closing when clicking inside the menu
         >
-          <li><Link to="/" onClick={() => setMenuOpen(false)}>Velkommen</Link></li>
+          <li><Link to="/" onClick={() => setMenuOpen(false)}>Velkomen</Link></li>
           <li><Link to="/program" onClick={() => setMenuOpen(false)}>Program</Link></li>
-          <li><Link to="/opphold" onClick={() => setMenuOpen(false)}>Sted & Opphold</Link></li>
+          <li><Link to="/opphold" onClick={() => setMenuOpen(false)}>Stad & Opphald</Link></li>
           <li>
             <a
               href="https://onsk.no/lister/qm8-p7n"
