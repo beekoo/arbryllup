@@ -34,6 +34,7 @@ function SchedulePage({ isLargeScreen }) {
         <p>Kl. 11.30 - 11.45: Avreise vigsel Hatlestrand.</p>
         <h3>Vigsel</h3>
         <p>Kl. 13.00: Vigsel i <a href="https://maps.app.goo.gl/1J4BAikCo11v41rQ7">Hatlestrand kyrkje</a> (Ragnhild sin heimplass) 
+        <br></br>Parkering: Ved kyrkja og 200 meter før kyrkja på høgre side, bak gamleskulen (større grusplass).
         <br></br>Enkel lunsj/niste etter kyrkja.
         </p>
         <h3>Bryllupsfest</h3>
