@@ -13,7 +13,11 @@ function SchedulePage({ isLargeScreen }) {
       <>
         <h2>Fredag 1. Mai</h2>
         <h3>Velkomen til bli-kjend-fest</h3>
-        <p>Frå morgonen: Topptur for dei ivrigaste (nærare informasjon kjem direkte til dei interesserte i siste halvdel av april).</p>
+        <p>Frå morgonen: Topptur til Osken 1241 <br />
+          Oppmøte parkeringen i <a href="https://maps.app.goo.gl/UY4zDWPG18xpXnh38">Vallavik/Tjoflot</a>  kl. 09.00. <br />
+          Underlag skogssti, sti og snødekt fjell. En blir garantert bløt på beina pga. den våte snøen. <br />
+          Sko: Terrengssko. Løpestaver kan være fint. Oppakning lett. <br />
+          Etter tur tar det ca. 1t45min å kjøre til Hardingasete.</p>
         <h3>Ettermiddag</h3>
         <p>Frå kl. 15.00: Velkomen til <a href="https://maps.app.goo.gl/7LNqqnpECT51Sc8HA ">Hardingasete</a> og innsjekk. </p> 
         <p>Frå kl. 16.00: Stamp og badstue etter tur, før middag. Baren er open.</p>
