@@ -66,6 +66,13 @@ html, body {
  
 }
 
+.right-sec img {
+  max-width: 80%; /* Adjust the image width relative to the container */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensure the image is treated as a block element */
+}
+
 .right-sec::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Edge */
 }
