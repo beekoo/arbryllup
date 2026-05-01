@@ -40,8 +40,9 @@ const [timeLeft, setTimeLeft] = useState('');
           <p className="date">1-3. mai 2026</p>
           {/* <p className="countdown">{timeLeft}</p> */}
           <h2>Velkomen til vår bryllupshelg i Hardanger!</h2>
-          <p>Me gler oss til å feira bryllupet vårt med familie og venar <br/> 1. mai helga 2026!</p>
-          <p>Her finn du informasjon om bryllupshelga. I dei andre fanene (på mobil tre strekar oppe i høgre hjørne) finn du nærare program, nærare informasjon om stad, opphald og lenke til ynskjeliste.</p>
+          {/* <p>Me gler oss til å feira bryllupet vårt med familie og venar <br/> 1. mai helga 2026!</p> */}
+          <img src="../public/img/qr_code.JPG" alt="" />
+          {/* <p>Her finn du informasjon om bryllupshelga. I dei andre fanene (på mobil tre strekar oppe i høgre hjørne) finn du nærare program, nærare informasjon om stad, opphald og lenke til ynskjeliste.</p> */}
           {/* <p>  <a href="https://docs.google.com/forms/d/1szIkqMf9pyR5LlJcMOPnxfGY4FOE6dEFqpLbmjeCSk0/viewform?edit_requested=true">invitasjonsskjema</a> så fort som mogleg og seinast innan 1. februar 2026.</p> */}
           
           

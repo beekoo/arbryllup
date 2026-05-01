@@ -192,7 +192,12 @@ margin: 8% auto 12% auto;
     align-items: center;
   }
 
-  
+  .right-sec img {
+    max-width: 80%; /* Adjust the image width relative to the container */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is treated as a block element */
+  }
 
   .weddingImg {
     height: 100%;
